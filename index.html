@@ -4,10 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E1 JS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>E2 JS</title>
   </head>
   <body>
-    <h1>E1 - Javascript</h1>
-    <script src="./main.js"></script>
+    <section class="container">
+      <div class="container__header">
+        <h1 class="header__text">Busca tu nucbabazappi ideal</h1>
+        <p>Ingresa el id para realizar tu busqueda!</p>
+      </div>
+      <form class="container__form">
+        <input type="number" id="input" class="container__input" placeholder="Id" />
+        <div class="form__errorMessage">
+          <i class="fa-sharp fa-solid fa-circle-exclamation hidden"></i>
+          </p>
+        </div>
+        <button class="container__button"><i class="fa-solid fa-magnifying-glass icon"></i></button>
+      </form>
+      <div class="container__result"></div>
+    </section>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./validate.js"></script>
   </body>
 </html>

@@ -124,9 +124,6 @@ const Pizzas = [
 
 const pizzasImpar = Pizzas.filter((pizza) => pizza.id % 2 !== 0)
 
-/* Tengo entendido por la consigna que solo se esta pidiendo el primer resultado con esa condición, 
-en caso contrario cambiar find por filter */
-
 const pizzaMinValue = Pizzas.find((pizza) => pizza.precio < 600)
 
 const pizzaFilterData = Pizzas.map((pizza) => {
@@ -136,17 +133,17 @@ const pizzaFilterData = Pizzas.map((pizza) => {
   }
 })
 
-console.log(`Las pizzas que tienen un id impar son las siguientes: ${pizzasImpar.map((pizza) => `${pizza.nombre} con el id ${pizza.id}`)}`)
-
-console.log("----------------------------")
-
-console.log(`La ${pizzaMinValue.nombre} tiene un valor de ${pizzaMinValue.precio}`)
-
-console.log("----------------------------")
-
-pizzaFilterData.map((pizza) => console.log(`La ${pizza.nombre} vale $${pizza.precio}`))
-
-console.log("----------------------------")
+// console.log(`Las pizzas que tienen un id impar son las siguientes: ${pizzasImpar.map((pizza) => `${pizza.nombre} con el id ${pizza.id}`)}`)
+// 
+// console.log("----------------------------")
+// 
+// console.log(`La ${pizzaMinValue.nombre} tiene un valor de ${pizzaMinValue.precio}`)
+// 
+// console.log("----------------------------")
+// 
+// pizzaFilterData.map((pizza) => console.log(`La ${pizza.nombre} vale $${pizza.precio}`))
+// 
+// console.log("----------------------------")
 
 for (let i = 0; i < Pizzas.length; i++) {
   console.log(`Ingredientes de la ${Pizzas[i].nombre}:`)
