@@ -110,6 +110,7 @@ body {
 .icon{
   color: var(--background);
   font-size: 1.25em;
+  background-color: var(--textPrimary);
 }
 
 .card{
